@@ -4,9 +4,9 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="style.css" />
-        <link rel="stylesheet" href="resolution_sm.css" />
         <link rel="stylesheet" href="resolution_md.css" />
         <link rel="stylesheet" href="resolution_lg.css" />
+        <link rel="stylesheet" href="resolution_xl.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" />
         <title>Reservia</title>
     </head>
@@ -15,33 +15,38 @@
 		<header>  <!-- en tête de la page -->
                 <img src="images/logo/Reservia.svg" alt="logo_reservia" />
                 <span class="bold">S'inscrire</span>		
-		</header>	
 
         <nav>  <!-- menu de navigation -->
             <ul>
                 <li class="nav_hebergement">Hébergements</li>
-                <li>Activités</li>
+                <li><a href="#activite">Activités</a></li>
             </ul>
 		</nav>
 
-            <!-- Recherche -->
+        </header>
 
+            <!-- Recherche -->
     <main>
     <section>
         <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
-        <p>En plein centre ville ou en pleine nature
-            <div class="research"><form method="post">
-                <i class="fas fa-map-marker-alt"></i>
-                <input class="input_text" type="text" placeholder="Marseille, France"/>
-				<button id="search_submit" type="submit" disabled><i class="fas fa-search"></i></button>
-            </form></div>
-        </p>
-        <span class="bold">Filtres</span>
+        <p>En plein centre ville ou en pleine nature</p>
+            <div class="research">
+                <form method="post">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <input class="input_text" type="text" placeholder="Marseille, France"/>
+                    <button id="search_submit_text" type="submit" disabled>Rechercher</button>
+				    <button id="search_submit" type="submit" disabled><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+        
+        <div class="global_filtre">
+        <h3><span class="bold filter_title">Filtres</span></h3>
         <div class="container_filtre">
                 <div class="filtre"><i class="fas fa-money-bill-wave"></i><a href="#">Economique</a></div>
                 <div class="filtre"><i class="fas fa-child"></i><a href="#">Familial</a></div>
                 <div class="filtre"><i class="fas fa-heart"></i><a href="#">Romantique</a></div>
                 <div class="filtre"><i class="fas fa-dog"></i><a href="#">Animaux autorisés</a></div>
+        </div>
         </div> <br />
 
         <div class="flex_info">
@@ -54,7 +59,7 @@
     <div class="section_resultat">
 
 	    <div class="container_populaire">
-            <div class="titre_populaire"><h3>Les plus populaires</h3><i class="fas fa-chart-line" style="color: black"></i></div> 
+            <div class="titre_populaire"><h2>Les plus populaires</h2><i class="fas fa-chart-line fa-lg" style="color: black"></i></div> 
                 <figure class="figure_populaire"><img src="images/hebergements/1_xlarge/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" 
                                                     class="img_populaire"/><br />
                     <figcaption class="caption_populaire">
@@ -97,8 +102,8 @@
         </div>	
 
         <div class="container_hebergement">
-            <h3><span class="bold">Hébergements à Marseille</span></h3><br />
-                <figure class="hebergement1"><img class="img_hebergement"
+            <h2><span class="bold">Hébergements à Marseille</span></h2><br />
+                <figure class="hebergement"><img class="img_hebergement"
                             src="images/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg"/><br />
                     <figcaption class="caption_hebergement">
                     <span class="bold">Auberge la Cannebière</span> <br />
@@ -111,12 +116,12 @@
                         <span class="fas fa-star checked" style="color: #d9d9d9;"></span>
                     </div></figcaption>
                 </figure>
-                <figure class="hebergement2"><img src="images/hebergements/1_xlarge/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
+                <figure class="hebergement"><img src="images/hebergements/1_xlarge/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
                             class="img_hebergement" /><br />
                     <figcaption class="caption_hebergement">
                     <span class="bold">Hôtel du port</span> <br />
                     Nuit à partir de <span class="bold">52€</span> <br />
-                    <div class="rating">
+                    <div class="rating rating_bot">
                         <span class="fas fa-star checked"></span>
                         <span class="fas fa-star checked"></span>
                         <span class="fas fa-star checked"></span>
@@ -124,7 +129,7 @@
                         <span class="fas fa-star checked"></span>
                     </div></figcaption>
                 </figure>
-                <figure class="hebergement3"><img src="images/hebergements/1_xlarge/reisetopia-B8WIgxA_PFU-unsplash.jpg" 
+                <figure class="hebergement"><img src="images/hebergements/1_xlarge/reisetopia-B8WIgxA_PFU-unsplash.jpg" 
                             class="img_hebergement"/><br />
                     <figcaption class="caption_hebergement">
                     <span class="bold">Hôtel Les mouettes</span> <br />
@@ -137,12 +142,12 @@
                         <span class="fas fa-star checked" style="color: #d9d9d9;"></span>
                     </div></figcaption>
                 </figure>
-                <figure class="hebergement4"><img src="images/hebergements/1_xlarge/annie-spratt-Eg1qcIitAuA-unsplash.jpg" 
+                <figure class="hebergement"><img src="images/hebergements/1_xlarge/annie-spratt-Eg1qcIitAuA-unsplash.jpg" 
                             class="img_hebergement"/><br />
                     <figcaption class="caption_hebergement">
                     <span class="bold">Hôtel de la mer</span> <br />
                     Nuit à partir de <span class="bold">46€</span> <br />
-                    <div class="rating">
+                    <div class="rating rating_bot">
                         <span class="fas fa-star checked"></span>
                         <span class="fas fa-star checked"></span>
                         <span class="fas fa-star checked"></span>
@@ -150,7 +155,7 @@
                         <span class="fas fa-star checked" style="color: #d9d9d9;"></span>
                     </div></figcaption>
                 </figure>
-                <figure class="hebergement5"><img src="images/hebergements/1_xlarge/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" 
+                <figure class="hebergement"><img src="images/hebergements/1_xlarge/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" 
                             class="img_hebergement"/><br />
                     <figcaption class="caption_hebergement">
                     <span class="bold">Auberge Le Panier</span> <br />
@@ -163,12 +168,12 @@
                         <span class="fas fa-star checked" style="color: #d9d9d9;"></span>
                     </div></figcaption>
                 </figure>
-                <figure class="hebergement6"><img src="images/hebergements/1_xlarge/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" 
+                <figure class="hebergement"><img src="images/hebergements/1_xlarge/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" 
                             class="img_hebergement"/><br />
                     <figcaption class="caption_hebergement">
                     <span class="bold">Hôtel chez Amina</span><br />
                     Nuit à partir de <span class="bold">96€</span><br />
-                    <div class="rating">
+                    <div class="rating rating_bot">
                         <span class="fas fa-star checked"></span>
                         <span class="fas fa-star checked"></span>
                         <span class="fas fa-star checked"></span>
@@ -176,12 +181,12 @@
                         <span class="fas fa-star checked"></span>
                     </div></figcaption>
                 </figure><br />
-            <p><a href="#"><span class="bold">Afficher plus</span></a></p>
+            <p><a href="#"><span class="bold afficher">Afficher plus</span></a></p>
         </div>
 
             <!-- Activités -->
         <div class="container_activite">
-            <h3><span class="bold">Activités à Marseille</span></h3><br/>
+            <h2 id="activite"><span class="bold">Activités à Marseille</span></h2><br/>
             <figure class="activite1"><img src="images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" 
                                         class="img_activite"/><br />
                 <figcaption class="texte_activite"><span class="bold">Vieux Port</span></figcaption></figure>
