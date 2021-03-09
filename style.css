@@ -138,7 +138,7 @@ i {
             color: #ffffff;
         }
 
-        .titre_filtre {
+        .filter_title {
             margin: 10px;
         }
 
@@ -162,7 +162,15 @@ i {
             border-left: 0;
         }
 
-        .filtre > a {
+        .container_filtre > a {
+            display: contents;
+        }
+
+        .container_filtre > a:hover {
+            color: #03015e;
+        }
+
+        .filtre > span {
             padding: 15px;
         }
 
@@ -214,6 +222,7 @@ i {
             flex-direction: column;
             align-content: stretch;
             max-width: 100%;
+            margin: 0;
         }
         
         figure {
@@ -239,6 +248,10 @@ i {
                 align-items: stretch;
                 flex-direction: column;
                 justify-content: center;
+            }
+
+            .container_populaire a {
+                display: contents;
             }
 
             .titre_populaire {
@@ -291,7 +304,7 @@ i {
 
 
             /* hebergement */
-            .container_hebergement {
+            #container_hebergement {
                 max-width: 100%;
                 display: flex;
                 align-items: stretch;
@@ -299,13 +312,17 @@ i {
                 justify-content: center;
             }
 
-            .container_hebergement > h2 {
+            #container_hebergement > a {
+                display: contents;
+            }
+
+            #container_hebergement > h2 {
                 padding-left: 30px;
                 padding-right: 30px;
                 margin: 30px 0px 0px 0px;
             }
 
-            .container_hebergement > figure {
+            #container_hebergement > figure {
                 margin: 10px 30px 10px 20px;
             }
 
@@ -322,13 +339,17 @@ i {
                 line-height: 1.5em;
             }
 
-            .container_hebergement > p {
+            #container_hebergement > p {
                 padding-left: 25px;
             }
 
             /* activite */
             .container_activite {
                 max-width: 100%;
+            }
+
+            .container_activite a {
+                display: contents;
             }
 
             .container_activite > h2 {

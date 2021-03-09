@@ -4,8 +4,12 @@
         flex-wrap: wrap;
     }
 
+    .filter_title {
+        margin-right: 20px;
+    }
+
         /* populaire */
-    .container_populaire {
+    #container_populaire {
         padding-left: 40px;
     }
 

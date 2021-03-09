@@ -105,7 +105,7 @@ form {
     align-items: stretch;
 }
 
-    .container_hebergement
+    #container_hebergement
     {
         order: 1;
         background-color: #F2F2F2;
@@ -119,7 +119,7 @@ form {
         justify-content: flex-start;
     }
 
-        .container_hebergement > h2 {
+        #container_hebergement > h2 {
             display: inline-block;
             width: 100%;
             padding: 0px 30px 10px 30px;
@@ -138,7 +138,7 @@ form {
             max-height: 150px;
         }
 
-        .container_hebergement > p {
+        #container_hebergement > p {
             padding-right: 200px;
         }
 
@@ -187,6 +187,7 @@ form {
     justify-items: center;
     width: 100%;
     margin-top: 40px;
+    margin-bottom: 50px;
 }
 
 .container_activite > h2 {
@@ -195,11 +196,12 @@ form {
     margin-left: 20px;
 }
 
-.container_activite > figure {
-    margin: 0;
+.container_activite figure {
     border-radius: 20px 20px 20px 20px;
     border-width: 0px;
-    margin: 0px 10px 0px 10px;
+    margin: 0px 0px 0px 0px;
+    margin-inline-start: 10px;
+    margin-inline-end: 10px;
 }
 
         .activite1
@@ -208,6 +210,7 @@ form {
             grid-column-end: 1;
             grid-row-start: 2;
             grid-row-end: 7;
+            height: 520px;
         }
 
         .activite1 > img {
@@ -220,6 +223,7 @@ form {
             grid-column-end: 2;
             grid-row-start: 2;
             grid-row-end: 5;
+            height: 270px;
         }
 
         .activite2 > img {
@@ -232,6 +236,7 @@ form {
             grid-column-end: 2;
             grid-row-start: 5;
             grid-row-end: 7;
+            height: 235px;
         }
 
         .activite3 > img {
@@ -244,6 +249,7 @@ form {
             grid-column-end: 3;
             grid-row-start: 2;
             grid-row-end: 7;
+            height: 520px;
         }
 
         .activite4 > img {
@@ -256,6 +262,7 @@ form {
             grid-column-end: 4;
             grid-row-start: 2;
             grid-row-end: 4;
+            height: 235px;
         }
 
         .activite5 > img {
@@ -269,6 +276,7 @@ form {
             grid-column-end: 4;
             grid-row-start: 4;
             grid-row-end: 7;
+            height: 270px;
         }
 
         .activite6 > img {
@@ -309,3 +317,9 @@ form {
     .container_footer > h3 {
     margin: 20px 0px 20px 0px;
     }
+
+.footer {
+    margin-top: 20px;
+}
+
+}
