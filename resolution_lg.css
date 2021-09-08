@@ -200,8 +200,7 @@ form {
     border-radius: 20px 20px 20px 20px;
     border-width: 0px;
     margin: 0px 0px 0px 0px;
-    margin-inline-start: 10px;
-    margin-inline-end: 10px;
+    width: 100%;
 }
 
         .activite1
@@ -220,7 +219,7 @@ form {
         .activite2
         {
             grid-column-start: 2;
-            grid-column-end: 2;
+            grid-column-end: 3;
             grid-row-start: 2;
             grid-row-end: 5;
             height: 270px;
